@@ -1,5 +1,13 @@
-FROM alpine:latest
-RUN apk update && apk add bash
+# Dockerfile
+
+FROM python:3.8
 
 WORKDIR /app
-COPY repeat.sh /app
+
+COPY requirements.txt .
+
+RUN pip install -r requirements.txt
+
+COPY . .
+
+CMD ["python", "app.py"]

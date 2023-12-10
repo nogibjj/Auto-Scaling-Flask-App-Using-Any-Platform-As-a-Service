@@ -12,3 +12,6 @@ uvicorn==0.18.3
 #python
 pandas
 matplotlib
+python-dotenv
+flask
+openai==0.28.0

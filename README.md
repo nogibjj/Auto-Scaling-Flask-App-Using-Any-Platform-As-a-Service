@@ -1,11 +1,9 @@
 # IDS_706-Data_Engineering_Systems
-## Mini-Project 11: Data Pipeline with Databricks
+## Individual Project 4 -  Auto Scaling Flask App Using Any Platform As a Service
 
 ### PURPOSE
 
-This project is for a data engineering course (Mini-Project 11). The purpose of this project is to develop a data pipeline using Databricks. The primary goal is to create an efficient and functional pipeline that includes at least one data source and one data sink.
-
-Dataset: [Iris Dataset](https://gist.github.com/netj/8836201)
+This project is for a data engineering course (Individual-Project 4). The purpose of this project is to develop a data pipeline using Databricks. The primary goal is to create an efficient and functional pipeline that includes at least one data source and one data sink.
 
 ***
 
