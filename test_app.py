@@ -50,3 +50,4 @@ def test_get_movie_recommendations(example_response):
     # Asserting that the release years are not 'Not Available'
     for rec in recommendations:
         assert rec['release_year'] != 'Not Available'
+ 
