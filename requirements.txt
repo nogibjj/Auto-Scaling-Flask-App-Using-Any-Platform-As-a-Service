@@ -11,6 +11,6 @@ uvicorn==0.18.3
 
 #app
 flask
-openai
+openai==0.28
 python.dotenv
 pytest

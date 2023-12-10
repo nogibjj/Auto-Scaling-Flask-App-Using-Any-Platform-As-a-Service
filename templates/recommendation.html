@@ -1,42 +1,63 @@
-<!-- recommendation.html -->
+<!-- templates/recommendation.html -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Recommendations</title>
+    <title>Movie Recommendation</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
             margin: 20px;
         }
         h1 {
             text-align: center;
+            color: #333;
         }
         .recommendation {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
             border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .details {
+            font-size: 16px;
+            color: #555;
+        }
+        .go-back {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: #007BFF;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <h1>Movie Recommendations</h1>
+    <h1>Movie Recommendation</h1>
 
-    <div class="recommendations">
-        {% for movie in recommendations %}
-            <div class="recommendation">
-                <strong>{{ movie.title }}</strong><br>
-                <strong>Genre:</strong> {{ movie.genre }}<br>
-                <strong>Release Year:</strong> {{ movie.release_year }}<br>
-                <strong>Director:</strong> {{ movie.director }}<br>
-                <strong>Description:</strong> {{ movie.description }}
-            </div>
-        {% endfor %}
+    <div class="recommendation">
+        <div class="title">
+            <strong>{{ recommendation.title }}</strong>
+        </div>
+        <div class="details">
+            <strong>Genre:</strong> {{ recommendation.genre }}<br>
+            <strong>Release Year:</strong> {{ recommendation.release_year }}<br>
+            <strong>Director:</strong> {{ recommendation.director }}<br>
+            <strong>Description:</strong> {{ recommendation.description }}
+        </div>
     </div>
 
-    <a href="/">Go back to the homepage</a>
+    <a href="/" class="go-back">Go back to the homepage</a>
 </body>
 </html>
