@@ -1,5 +1,4 @@
-# IDS_706-Data_Engineering_Systems
-## Individual Project 4 -  Auto Scaling Flask App Using Any Platform As a Service
+## Auto Scaling Flask App Using Any Platform As a Service
 
 ### PURPOSE
 
